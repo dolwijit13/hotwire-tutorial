@@ -8,3 +8,10 @@
 
   <%= button_to "Destroy this post", @post, method: :delete %>
 </div>
+
+<div id="comments">
+  <%= render @post.comments %>
+</div>
+
+<%= link_to "New comment", new_post_comment_path(@post) %>
+  
